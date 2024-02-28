@@ -1,0 +1,592 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+
+
+
+
+
+
+/* Header */
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 50px;
+  background: black;
+  justify-content: space-between;
+  z-index: 100;
+ 
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+  
+}
+
+a:hover{
+background-color: #2A8CA7;
+border-radius: 1px;
+}
+
+.nav .nav-links a {
+  transition: all 0.2s linear;
+  
+}
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+
+.nav .navCloseBtn {
+  display: none; 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
+
+/* About Me */
+
+.about-content{
+  position: relative;
+  padding: 70px 0;
+}
+
+.image-section {
+ display: inline-block;
+ width: 500px;
+ z-index: -100;
+}
+
+.image-section img {
+  width: 70%;
+}
+
+
+
+.text-section {
+  display: inline-block;
+  text-align: left;
+  text-wrap: wrap;
+  font-size: 30px;
+  line-height: 1.5;  
+ 
+}
+
+.text-section p{
+ text-align: left;
+ color: black;
+ text-wrap: wrap;  
+}
+
+.underlining {
+  text-decoration: underline;
+}
+
+
+.text-section h3{
+  text-align: left;
+  color: #2A8CA7;
+}
+
+.list-about{
+  list-style: none;
+ 
+  font-size: 18px;
+  color:black;
+}
+
+.text-section li::before {
+  content: ">> ";
+  color: #2A8CA7;
+  font-weight: bold;
+}
+
+
+.hire-me {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #2A8CA7;;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+
+/* Experience */
+
+.experienceblock{
+  background-color: lightgray;
+}
+.experience-content {
+  padding: 50px;
+  
+}
+
+
+.exp-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 30px 0 0 0;
+  padding-top: 60px;
+  color: black
+}
+
+.exp-cardsection {
+  padding: 30px;
+  width: 40%;
+  display: inline-block; 
+  vertical-align: top; 
+  margin-top: -20px;
+  
+ 
+}
+
+.card1{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.exp-card {
+  padding: 30px;
+  padding-top:50px ;
+  text-align: center;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  border-radius: 30px;
+}
+
+.exp-card img {
+  width: 250px; 
+  height: 160px; 
+  object-fit: contain;
+ background-color: #000000;
+ border-radius: 30px;
+}
+
+.exp-card h2 {
+  font-size: 20px;
+  color: #2A8CA7;
+  border-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  box-shadow: black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.exp-card .exp-sentence{
+  padding-top: 10px;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+
+/* Education */
+
+.educationblock{
+  background: whitesmoke;
+  padding-bottom: 30px;
+}
+
+.edu-title {
+  text-align: left;
+  color: black;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.edu-institute {
+  
+  
+  background-color: lightgray;
+  width: 38%; 
+  display: inline-block; 
+  border-radius: 30px;
+  
+  
+}
+
+.unh{
+  margin-left: 150px;
+  margin-right: 85px;
+}
+.university {
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.university img{
+  width: 200px;
+  height: 200px;
+}
+
+.university p{
+  color: black;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.university .edu-sentence{
+  text-decoration: none;
+}
+
+
+
+/* Competencies (skills and certifications) */
+
+
+.competencyblock {
+  background-color: lightgray;  
+}
+
+.competencies{
+    padding: 50px;
+    display: inline-block;
+   
+}
+
+.competencies .skills{
+  width: 38%; 
+  display: inline; 
+    background-color: whitesmoke;
+}
+
+.competencies .certs{
+  width: 48%; 
+    display: inline; 
+    background-color: whitesmoke;
+}
+
+.skillcert-title {
+  text-align: left;
+  padding-top: 60px;
+  font-weight: bold;
+  color: black;
+}
+
+.skills h2{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.certs h2{
+  margin-left: -30px;
+}
+
+.skills img{
+  width: 100px;
+  object-fit: contain; 
+  background-color: whitesmoke;
+  margin: 20px;
+}
+
+.certs img {
+  width: 100px;
+  object-fit: contain; 
+  background-color: whitesmoke;
+  margin-left: -30px;
+  margin-right: 70px ;
+  margin-top: 20px;
+}
+
+
+/* Projects */
+
+.projectsblock {
+  background-color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+.proj-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+
+.proj-cardsection {
+  border-radius: 20px;
+  
+}
+
+
+.proj-card img {
+  width: 250px; 
+  height: 200px;
+  object-fit: contain;
+  background-color: #11101d;
+  margin: auto;
+  display: block;
+   
+}
+
+.proj-card h5, .proj-card h3{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.proj-card h2 {
+  font-size: 18px;
+  color: black;
+  
+}
+
+.center-proj-sentence {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+.card1,.card2{
+  background-color: lightgray;
+  border-radius: 30px;
+}
+
+.proj-card p{
+  padding-top: 5px;
+  font-size: 15px;
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/* Blogs */
+
+
+.blogsblock {
+  background-color: lightgray;
+}
+
+.blog-content{
+  
+  padding: 90px;
+  
+}
+
+.blog-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 20px 0 0 0;
+  color: black;
+  padding-top: 60px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  
+}
+
+
+.blog-section {
+  
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px;
+  width: 43%; /* changed */
+  display: inline-block; /* added */
+  vertical-align: top; /* added */
+ 
+}
+
+.blog1{
+  margin-right: 147px;
+}
+
+.blogcard {
+  
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.blog-section button{
+  display: inline;
+}
+
+.blogcard img {
+ 
+  width: 300px; 
+  height: 180px; 
+  object-fit: contain;
+}
+
+.blogcard h2 {
+  font-size: 22px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.blogcard p{
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+.blogcard .blog-sentence{
+  padding-top: 10px;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+
+
+
+/* Contact me  */
+
+.con-details {
+  padding: 60px;
+}
+
+.contact-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 20px 0 0 0;
+  color: black;
+  padding-top: 60px;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.lastimage{
+  background-image: url("contactimage.jpg"); 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  width: 100%;
+  background-size: cover; 
+}
+
+
+.forms {
+  width: 100%; 
+}
+
+
+form {
+  display: inline-block; 
+  align-items: center; 
+ margin-top: -20px;
+}
+
+
+input {
+  padding: 10px 170px; 
+  border: 1px solid darkgrey; 
+  border-radius: 5px; 
+  margin: 5px; 
+  outline: none; 
+  font-size: 20px;
+  text-align: left;
+  
+}
+
+textarea{
+  padding: 15px 160px; 
+  border: 1px solid darkgrey; 
+  border-radius: 5px; 
+  margin: 5px; 
+  outline: none; 
+  height: 100px;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+button {
+  padding: 10px; 
+  font-size: 20px;
+  border: none; 
+  border-radius: 5px; 
+  background-color: #2A8CA7; 
+  color: white; 
+  cursor: pointer; 
+  clear: both; /* add this property to clear the floats */
+  margin-left: 10px; 
+  display: block;
+ 
+  
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px;
+  color: white;
+}
+
+small {
+  font-size: 16px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  vertical-align:middle;
+}
+
